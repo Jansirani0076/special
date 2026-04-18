@@ -1,8 +1,89 @@
 body {
-  background-color: lightblue;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: white;
 }
 
-h1 {
-  color: red;
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #111;
+  height: 100vh;
+  padding: 20px;
+}
+
+.logo {
+  color: #ff3366;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 0;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.sidebar li:hover {
+  color: #ff3366;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Hero */
+.hero {
+  background: url('https://source.unsplash.com/1000x400/?concert') no-repeat center/cover;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  margin: 0;
+}
+
+.hero button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff3366;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Albums */
+.section-title {
+  margin-top: 20px;
+}
+
+.albums {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
   text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
